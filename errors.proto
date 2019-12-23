@@ -1,0 +1,22 @@
+syntax = "proto3";
+package proto;
+
+message Error {
+    message Code {
+        uint32      service     =   1;
+        enum        Type {
+            Undefined           =   0;
+            Service             =   1;
+            Network             =   2;
+            DateTime            =   3;
+            Micro               =   4;
+            Library             =   5;
+            Wrapper             =   6;
+        }
+        Type        type        =   2;
+        uint32      number      =   3;
+    }
+    Code            code        =   1;
+    string          message     =   2;
+    Error           error       =   3;
+}

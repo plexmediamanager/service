@@ -4,9 +4,10 @@ import format "fmt"
 
 const (
     RedisServiceName            =   "micro.redis"
-    HelixServiceName            =   "micro.helix"
-    TwitchServiceName           =   "micro.twitch"
-    CommanderServiceName        =   "micro.commander"
+    DatabaseServiceName         =   "micro.database"
+    TMDBServiceName             =   "micro.tmdb"
+    JackettServiceName          =   "micro.jackett"
+    TorrentServiceName          =   "micro.torrent"
 )
 
 var (
